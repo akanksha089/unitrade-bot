@@ -19,7 +19,7 @@ function Profile() {
     user_name: '',
     email: '',
     upi_id: '',
-    user_photo: null, // Store the file in state
+    user_photo: null, 
   });
   useEffect(() => {
     dispatch(fetchMeData());
