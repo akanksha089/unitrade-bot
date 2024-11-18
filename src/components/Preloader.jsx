@@ -6,7 +6,7 @@ function Home() {
     <div className="bg-white flex justify-center">
     <div className="w-full max-w-lg bg-black text-white min-h-screen font-bold flex flex-col">
   
-      {/* Preloader Section */}
+
       <div className="flex-grow mt-4  relative  z-0">
         <div className="absolute left-0 right-0 bottom-0 ">
           
