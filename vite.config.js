@@ -28,7 +28,7 @@ export default defineConfig({
     proxy: {
       '/api': { // Ensure the proxy path starts with '/' 
         target: "https://telegram-bot-by30.onrender.com/api/v1", // Target backend API
-        changeOrigin: true, // Enable to handle CORS issues
+        // changeOrigin: true, // Enable to handle CORS issues
         rewrite: (path) => path.replace(/^\/api/, ''), // Remove '/api' prefix when proxying
       },
     },
