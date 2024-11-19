@@ -45,10 +45,10 @@ function App({ Component, pageProps }) {
         <AuthListener />
         <Routes>
      
-        <Route
+        {/* <Route
             path="/"
             element={!token ? <Navigate to="/signup" /> : <Navigate to="/home" />}
-          />
+          /> */}
 
           <Route element={<PublicRoute />}>
             <Route path="/login" element={<Login />} />
