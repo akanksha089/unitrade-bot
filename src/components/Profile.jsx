@@ -17,6 +17,7 @@ function Profile() {
   const [imagePreview, setImagePreview] = useState(null);
   const canvasRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
   const [formData, setFormData] = useState({
     user_name: '',
     email: '',
