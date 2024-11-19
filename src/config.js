@@ -6,6 +6,6 @@
 
 
  export const FRONTEND_URL =  
- "https://unitrade-bot.onrender.com";
-//  "https://t.me/Unitrades_bot/Unitrade_app";
+//  "https://unitrade-bot.onrender.com";
+ "https://t.me/Unitrades_bot/Unitrade_app";
   //"http://localhost:5173"

@@ -24,7 +24,8 @@ function Signup() {
   const navigate = useNavigate();
   const location = useLocation(); // Use location to access the URL parameters
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
+    // const params = new URLSearchParams(location.search);
+    const params = new URLSearchParams(window.location.search);
     const referralCode = params.get('referral_code'); // Get the referral code from the URL
 console.log("params", referralCode);
 
