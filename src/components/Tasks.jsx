@@ -159,7 +159,7 @@ function Tasks() {
       });
 
       if (!response.ok) throw new Error(`Error: ${response.status} ${response.statusText}`);
-
+      dispatch(fetchQuestHistory());
       setHasWatched(prev => ({ ...prev, [task]: true }));
       toast("Task Completed!");
     } catch (error) {
