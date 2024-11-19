@@ -6,5 +6,5 @@
 
 
  export const FRONTEND_URL =
- "t.me/Unitrades_bot/unitrades_bot";
+ "https://t.me/Unitrades_bot/Unitrade_app";
   //"http://localhost:5173"
