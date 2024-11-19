@@ -21,13 +21,13 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     setErrors(''); // Clear previous error message
-    setLoading(true); // Show loader when upload starts
+    // setLoading(true); // Show loader when upload starts
     try {
       await dispatch(login({ mobile, password }));
       setToastMessage("Login successful!");
       setShowToast(true);
       setTimeout(() => {
-        setLoading(false); // Hide loader after success
+        // setLoading(false); // Hide loader after success
         navigate("/home");
       }, 2000);
     } catch (error) {
