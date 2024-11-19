@@ -18,6 +18,7 @@ function Profile() {
   const canvasRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
+  const [showToast, setShowToast] = useState(false);
   const [formData, setFormData] = useState({
     user_name: '',
     email: '',
@@ -79,10 +80,12 @@ function Profile() {
     dispatch(fetchMeData());
 
     setToastMessage("Profile updated successfully!");
+    setShowToast(true);
     // alert("Profile updated successfully!");
   } catch (error) {
     console.error("Error updating profile:", error);
-    alert("There was an error updating your profile.");
+    setShowToast(true);
+    setToastMessage("There was an error updating your profile.");
   } finally {
     setLoading(false); // Hide loader after the request completes
   }
